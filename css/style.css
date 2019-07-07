@@ -1,0 +1,519 @@
+@charset 'utf-8';
+
+a{
+    color:inherit;
+}
+
+ul{
+    
+}
+
+.wrap{
+    width:1050px;
+    margin:0 auto;
+}
+
+/* headerTop 영역 */
+
+.headerTop{
+    width:100%;
+    height: 80px;
+    background-color: #49dbd0;
+    position: relative;
+
+}
+
+.banner:after{
+    display: block;
+    clear:both;
+    content:'';
+}
+
+.banner li{
+    float:left;
+    width:25%;
+}
+
+.banner li img{
+    width:100%;
+}
+
+#close{
+    position: absolute;
+    top:26px;
+    right:50px; 
+}
+
+
+/* header 영역 */
+
+/* headerutil 영역 */
+
+.headerutil{
+    width:100%;
+    height: 30px;
+    background-color:#efefef;
+    
+    
+}
+
+.utilwrap{
+    position: relative;
+    color:#666;
+}
+
+.utilLeft {
+    display: inline-block;
+    margin-top:5px;
+}
+
+.utilLeft a{
+    margin-right: 10px;
+}
+
+.utilRight{
+    position: absolute;
+    top:5px;
+    right:0;
+    
+}
+
+.utilRight li{
+    float: left;
+    margin: 0 10px;
+}
+
+/* headerMain 영역 */
+
+.headerMain{
+    height: 88px;
+    
+}
+
+.headerMainwrap{
+    /* background-color:#0ff; */
+    position: relative;
+}
+
+.search{
+    position: absolute;
+    top:17px;
+    left:230px;
+    
+}
+
+
+
+.searchIn{
+    width:560px;
+    height: 45px;
+    border: 5px solid #d00000;
+    font-size:24px;
+    background-color:#d00000
+    /* padding-right: 30px; */
+    
+}
+
+.search input{
+    width:500px;
+    height: 40px;
+}
+
+.searchicon{
+    display: inline-block;
+    height:45px;
+    width:45px;
+    background-image: url(../img/btn_search.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 50px;
+    box-sizing: border-box;
+    
+
+}
+
+.searchicon a{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+}
+
+.quickicon{
+    position: absolute;
+    top:25px;
+    right: 0;
+    vertical-align: bottom;
+}
+
+.quickicon span{
+    margin:0 10px;
+}
+
+/* allcategory 영역 */
+
+.allcategory{
+    border-top:1px solid #eee;
+    border-bottom: 3px solid #d00000;   
+}
+
+.allcategorybutton{
+    position: relative;
+    
+    
+}
+
+.allcategorybutton a{
+    display: inline-block;
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    width:150px;
+    height: 50px;
+    padding-left:50px;
+    line-height: 50px;
+    font-size:16px;
+    font-weight: 700;
+    /* background-color:#efefef; */
+    color:#666;
+    
+}
+
+.allcategorybutton img{
+    vertical-align: middle;
+    width:20px;
+    margin: 0 10px;
+}
+
+.buttonicon{
+    
+    position: absolute;
+    top:2px;
+    left:12px;
+}
+
+.buttonicon span{
+    display: block;
+    width:25px;
+    height: 2px;
+    background-color:#999;
+    margin-bottom:5px;
+}
+
+
+
+.service{
+    display: inline-block;
+    margin-left:20px;
+}
+
+.service li{
+    display: inline-block;
+    font-weight: 700;
+    margin: 0 10px;
+    font-size:16px;
+}
+
+.deal{
+    color:#d00000;
+}
+
+/* maincontainer 영역*/
+.maincontainerwrap::after{
+    display: block;
+    clear:both;
+    content:'';
+}
+
+.category{
+    float:left;
+}
+
+.category li{
+    width:200px;
+    height:60px ;
+    text-align: center;
+    line-height: 60px;
+    font-size:18px;
+    background-color:#d00000;
+    border-bottom:1px solid #efefef;
+    color:#eee;
+
+}
+
+.mainVisual{
+    width:850px;
+    height: 366px;
+    float: left;
+
+}
+
+.mainVisual img{
+    display: inline-block;
+    width:100%;
+    vertical-align: top;
+    
+}
+.bannerbutton ul::after{
+    display: block;
+    clear: both;
+    content:'';
+}
+
+.bannerbutton li{
+    float: left;
+    width:20%;
+    height: 40px;
+    background-color:#efefef;
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    color:#666;
+    
+}
+
+.bannerbutton li:first-child{
+    background-color:#2a2a2a;
+    color:#efefef;
+}
+
+
+
+.bannerbutton li a{
+    display: inline-block;
+    /* width:20%; */
+    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    
+    
+    
+}
+
+/* best 영역 */
+
+.best{
+    width: 100%;
+    height: 400px;
+    margin:50px 0;
+
+}
+
+.bestwrap{
+    position: relative;
+}
+
+.bestTitle{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom:40px;
+}
+
+.itemslider{
+    padding:0 70px;
+}
+
+.itemslider:after{
+    display: block;
+    clear:both;
+    content:'';
+}
+
+.itemslider li a img{
+    width:180px;
+    height: 180px;
+}
+
+.itemslider li{
+    position: relative;
+    float: left;
+    margin-right:20px;
+}
+
+.bestnum{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.bestnum img{
+    width:60%;
+}
+
+.besttxt{
+    position: relative;
+    width:180px;
+}   
+
+.name{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size:16px;
+    font-weight: 900;
+}
+
+.price{
+    color:#666;
+    text-decoration: line-through;
+}
+
+.sale{
+    font-size:20px;
+}
+
+.percent{
+    color:#d00000;
+    font-weight: 900;
+    font-size:22px;
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+.button .button_prev{
+    display: block;
+    background-position: -510px 0;
+    background-image: url(../img/main.png);
+    width:60px;
+    height: 70px;
+    position: absolute;
+    top:150px;
+}
+
+.button .button_next{
+    display: block;
+    background-position: -580px 0;
+    background-image: url(../img/main.png);
+    width:60px;
+    height: 70px;
+    position: absolute;
+    top:150px;
+    left:650px;
+}
+.smallAD {
+    position: absolute;
+    top:0px;
+    right:50px
+}
+
+.smallAD img{
+    width:180px;
+
+}
+
+
+
+/* wingbanner 영역 */
+
+#container{
+    position: relative;
+}
+
+.wingbanner{
+    position: absolute;
+    top:100px;
+    right:200px;
+    
+    width:120px;
+}
+
+.wingbanner ul{
+    border: 1px solid #efefef;
+}
+
+.wingbanner ul>li a{
+    display: block;
+    width:100%;
+    height: 35px;
+    border-bottom:1px solid #eee;
+    color: #999;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 900;
+    font-size:16px;
+}
+
+.myshopping{
+    background-color: #2a2a2a;
+    
+}
+
+.wingbanner ul li .img li a{
+    height: 100px;
+    line-height: 100px;
+}
+
+
+/* footer 영역 */
+
+footer{
+    width:100%;
+    height: 230px;
+
+}
+
+.footerTop{
+    border-top: 3px solid #666;
+    border-bottom: 1px solid #999;
+    height: 22px;
+    padding:15px;
+    
+}
+
+.footerTopwrap{
+    position: relative;
+}
+.footermenu li{
+    display: inline-block;
+    margin-right:10px;
+}
+
+.sns{
+    position: absolute;
+    top:0;
+    right: 50px;
+}
+.sns li{
+    display: inline-block;
+    margin-left:20px;
+}
+
+.btntop{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.footercontents{
+    padding:30px;
+}
+
+.footercontentswrap{
+    position: relative;
+}
+.footercontentswrap:after{
+    display: block;
+    clear: both;
+    content:'';
+}
+
+.footercontentswrap div{
+    float:left;
+}
+
+address{
+    font-style: normal;
+    margin-left:30px;
+    font-size:12px;
+    color:#666;
+    line-height: 15px;
+}
+
+.inipay{
+    position: absolute;
+    bottom:0;
+    right:0;
+}
