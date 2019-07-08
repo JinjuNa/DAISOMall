@@ -7,6 +7,7 @@
     <title>다이소몰</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://kit.fontawesome.com/6cf8dee3cc.js"></script>
 </head>
 <body>
     <div class="headerTop">
@@ -67,7 +68,10 @@
 
 
     </header>
+
+    
     <div id="container">
+            
 
     <div class="allcategory">
         <div class="allcategorywrap wrap">
@@ -110,7 +114,10 @@
         <div class="mainVisual">
             
                 <img src="./img/mainbig/mainbig04.png" class="mainbig">
-                
+                <div class="button">
+                        <a href="#" class="button_prev"></a>
+                        <a href="#" class="button_next"></a>
+                    </div>
 
             <div class="bannerbutton">
                 <ul>
@@ -123,10 +130,37 @@
                 </ul>
             </div>
 
+            <div class="pager">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+            </div>
+
           
         </div>
 
     </div>
+
+    <div class="wingbanner">
+            <ul>
+                <li class="myshopping"><a href="#" style="color:white">나의 쇼핑정보</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">최근본상품 <i class="fas fa-plus"></i></a></li>
+                <li>
+                    <ul class="img"><li><a href="#"><img src="./img/item/item01.gif"></a></li>
+                        <li><a href="#"><img src="./img/item/item02.gif"></a></li>
+                        <li><a href="#"><img src="./img/item/item03.gif"></a></li>
+                    </ul>
+                </li>
+            </ul>
+    
+            <div class="wingAD">
+                <img src="https://image.daisomall.co.kr/data/daiso_data/images/banner/1048/tm_190705.png">
+            </div>
+        </div>
     </section>
 
     <section class="best">
@@ -171,12 +205,23 @@
                             <span class="percent">73%</span>
                         </div>
                     </li>
-                </ul>
 
-                <div class="button">
+                    <div class="button">
                     <a href="#" class="button_prev"></a>
                     <a href="#" class="button_next"></a>
+                    </div>
+
+                    <div class="pager">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        
                 </div>
+                </ul>
+
+                
+
+                
 
                 <div class="smallAD">
                         
@@ -197,6 +242,7 @@
     </section>
 
         <!-- 베너광고 -->
+    <div class="AD">
     <div class="bannerAD">
         <div class="bannerAdwrap wrap">
             <a href="#"><img src="https://image.daisomall.co.kr/data/daiso_data/images/banner/1055/05_01_190701.jpg"></a>
@@ -210,30 +256,37 @@
     
         </div>
     </div>
+</div>
 
-    <div class="wingbanner">
-        <ul>
-            <li class="myshopping"><a href="#" style="color:white">나의 쇼핑정보</a></li>
-            <li><a href="#">장바구니</a></li>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">최근본상품 +</a></li>
-            <li>
-                <ul class="img"><li><a href="#"><img src="./img/item/item01.gif"></a></li>
-                    <li><a href="#"><img src="./img/item/item02.gif"></a></li>
-                    <li><a href="#"><img src="./img/item/item03.gif"></a></li>
-                </ul>
-            </li>
-        </ul>
+    
 
-        <div class="wingAD">
-            <img src="https://image.daisomall.co.kr/data/daiso_data/images/banner/1048/tm_190705.png">
-        </div>
-    </div>
-
-    <section class="hot">
+    <section class="hot" id="category0">
+            <div class="categorybar">
+                    <ul>
+                        <li class="title"><a href="#category0">카테고리</a></li>
+                        <li id="bar01"><a href="#category1">바구니</a></li>
+                        <li id="bar02"><a href="#category2">보관</a></li>
+                        <li id="bar03"><a href="#category3">식기</a></li>
+                        <li id="bar04"><a href="#category4">주방</a></li>
+                        <li id="bar05"><a href="#category5">일회</a></li>
+                        <li id="bar06"><a href="#category6">거실</a></li>
+                        <li id="bar07"><a href="#category7">뷰티</a></li>
+                        <li id="bar08"><a href="#category8">시즌</a></li>
+                        <li id="bar09"><a href="#category9">안전</a></li>
+                        <li id="bar10"><a href="#category10">청소</a></li>
+                        <li id="bar11"><a href="#category11">세탁</a></li>
+                        <li id="bar12"><a href="#category12">욕실</a></li>
+                        <li id="bar13"><a href="#category13">인테리어</a></li>
+                        <li id="bar14"><a href="#category14">원예</a></li>
+                        <li id="bar15"><a href="#category15">미용</a></li>
+                        <li id="bar16"><a href="#category16">유아동</a></li>
+                        <li id="bar17"><a href="#category17">사무</a></li>
+                        <li id="bar18"><a href="#category18">완구</a></li>
+                    </ul>
+                </div>
         <div class="hotwrap wrap">
-        <div class="hotTitle">
-            <h3>HOT!<br>
+        <div class="hotTitle" >
+            <h3>
                 카테고리별 <strong>인기상품</strong>
             </h3>
             <p></p>
@@ -246,7 +299,7 @@
 
                 <div class="hotLeft">
                         <span class="title">바구니</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -318,7 +371,7 @@
 
                 <div class="hotLeft">
                         <span class="title">보관</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -390,7 +443,7 @@
 
                 <div class="hotLeft">
                         <span class="title">식기</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -463,7 +516,7 @@
 
                 <div class="hotLeft">
                         <span class="title">주방</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -536,7 +589,7 @@
 
                 <div class="hotLeft">
                         <span class="title">일회용품</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -609,7 +662,7 @@
 
                 <div class="hotLeft">
                         <span class="title">거실</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -682,7 +735,7 @@
 
                 <div class="hotLeft">
                         <span class="title">뷰티</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -755,7 +808,7 @@
 
                 <div class="hotLeft">
                         <span class="title">시즌</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -828,7 +881,7 @@
 
                 <div class="hotLeft">
                         <span class="title">안전</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -901,7 +954,7 @@
 
                 <div class="hotLeft">
                         <span class="title">청소</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -974,7 +1027,7 @@
 
                 <div class="hotLeft">
                         <span class="title">세탁</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -1046,7 +1099,7 @@
 
                 <div class="hotLeft">
                         <span class="title">욕실</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -1118,7 +1171,7 @@
 
                 <div class="hotLeft">
                         <span class="title">인테리어</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -1191,7 +1244,7 @@
 
                 <div class="hotLeft">
                         <span class="title">원예</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -1264,7 +1317,7 @@
 
                 <div class="hotLeft">
                         <span class="title">미용</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -1337,7 +1390,7 @@
 
                 <div class="hotLeft">
                         <span class="title">유아동</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -1410,7 +1463,7 @@
 
                 <div class="hotLeft">
                         <span class="title">사무</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -1483,7 +1536,7 @@
 
                 <div class="hotLeft">
                         <span class="title">완구</span><br>
-                        <span class="link"><a href="#">바로가기 ></a></span>
+                        <span class="link"><a href="#">바로가기 <i class="fas fa-plus-circle"></i></a></span>
                     <ul>
                         <li>
                             <a href="#">
@@ -1554,29 +1607,7 @@
         </ul>
     </div>
 
-    <div class="categorybar">
-        <ul>
-            <li class="title">카테고리</li>
-            <li id="bar01"><a href="#category1">바구니</a></li>
-            <li id="bar02"><a href="#category2">보관</a></li>
-            <li id="bar03"><a href="#category3">식기</a></li>
-            <li id="bar04"><a href="#category4">주방</a></li>
-            <li id="bar05"><a href="#category5">일회</a></li>
-            <li id="bar06"><a href="#category6">거실</a></li>
-            <li id="bar07"><a href="#category7">뷰티</a></li>
-            <li id="bar08"><a href="#category8">시즌</a></li>
-            <li id="bar09"><a href="#category9">안전</a></li>
-            <li id="bar10"><a href="#category10">청소</a></li>
-            <li id="bar11"><a href="#category11">세탁</a></li>
-            <li id="bar12"><a href="#category12">욕실</a></li>
-            <li id="bar13"><a href="#category13">인테리어</a></li>
-            <li id="bar14"><a href="#category14">원예</a></li>
-            <li id="bar15"><a href="#category15">미용</a></li>
-            <li id="bar16"><a href="#category16">유아동</a></li>
-            <li id="bar17"><a href="#category17">사무</a></li>
-            <li id="bar18"><a href="#category18">완구</a></li>
-        </ul>
-    </div>
+    
     </section>
 </div>
 
@@ -1621,8 +1652,8 @@
             </div>
 
             <div class="inipay">
-                <img src="https://image.inicis.com/mkt/certmark/inipay/inipay_43x43_gray.png">
-                <img src="https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png">
+                <a href="#"><img src="https://image.inicis.com/mkt/certmark/inipay/inipay_43x43_gray.png"></a>
+                <a href="#"><img src="https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png"></a>
             </div>
             </div>
         </div>

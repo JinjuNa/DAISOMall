@@ -177,6 +177,10 @@ ul{
     
 }
 
+.allcategorybutton a:hover{
+    background-color: #efefef;
+}
+
 .allcategorybutton img{
     vertical-align: middle;
     width:20px;
@@ -232,18 +236,46 @@ ul{
     height:60px ;
     text-align: center;
     line-height: 60px;
-    font-size:18px;
+    font-size:14px;
     background-color:#d00000;
     border-bottom:1px solid #efefef;
     color:#eee;
+    font-weight: 900;
 
+}
+
+.category li:hover{
+    background-color:#5a5a5a;
+    
 }
 
 .mainVisual{
     width:850px;
     height: 366px;
     float: left;
+    position: relative;
 
+}
+
+.mainVisual .button .button_prev{
+    display: block;
+    background-position: -510px 0;
+    background-image: url(../img/main.png);
+    width:60px;
+    height: 70px;
+    position: absolute;
+    top:125px;
+}
+
+.mainVisual .button .button_next{
+    display: block;
+    background-position: -580px 0;
+    background-image: url(../img/main.png);
+    width:60px;
+    height: 70px;
+    position: absolute;
+    top:125px;
+    right: 20px;
 }
 
 .mainVisual img{
@@ -289,6 +321,14 @@ ul{
     
 }
 
+.mainVisual .pager{
+    position: absolute;
+    left:50%;
+    bottom:40px;
+    margin-left:-30px;  
+
+}
+
 /* best 영역 */
 
 .best{
@@ -313,6 +353,9 @@ ul{
 
 .itemslider{
     padding:0 70px;
+    height: 300px;
+    width:fit-content;
+    position: relative;
 }
 
 .itemslider:after{
@@ -351,7 +394,7 @@ ul{
     white-space:nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size:16px;
+    font-size:14px;
     font-weight: 900;
 }
 
@@ -380,7 +423,8 @@ ul{
     width:60px;
     height: 70px;
     position: absolute;
-    top:150px;
+    top:70px;
+    left:0;
 }
 
 .best .button .button_next{
@@ -390,8 +434,29 @@ ul{
     width:60px;
     height: 70px;
     position: absolute;
-    top:150px;
-    left:650px;
+    top:70px;
+    right:0;
+}
+
+.best .pager{
+    position: absolute;
+    left:50%;
+    bottom:10px;
+    margin-left:-17px;  
+
+}
+
+.pager a{
+    display: inline-block;
+    width:8px;
+    height: 8px;
+    background-color:#ddd;
+    border-radius: 4px;
+    text-indent: -9999px;
+}
+
+.pager .active{
+    background-color:#2a2a2a;
 }
 .smallAD {
     position: absolute;
@@ -402,6 +467,18 @@ ul{
 .smallAD img{
     width:180px;
 
+}
+
+/*  bannerAD 배너광고 */
+
+.AD{
+    padding:40px 0;
+    background-color:#e0e0e0;
+}
+.bannerAD{
+    width:100%;
+    
+    
 }
 
 
@@ -415,7 +492,9 @@ ul{
 .wingbanner{
     position: absolute;
     top:100px;
-    right:50px;
+    right:50%;
+    margin-right: -700px;
+    height: 0;
     
     width:120px;
 }
@@ -434,7 +513,10 @@ ul{
     text-align: center;
     font-weight: 900;
     font-size:16px;
+    
+    
 }
+
 
 .myshopping{
     background-color: #2a2a2a;
@@ -449,8 +531,10 @@ ul{
 
 /* hot 영역 */
 
+
+
 .hot{
-    margin-top:50px;
+    padding-top:200px;
     position: relative;
 }
 
@@ -524,7 +608,7 @@ ul{
 #category8 .title{
     color:#dd6641;
 
-}
+}   
 
 #category9{
     border-top:5px solid #5868be;
@@ -621,7 +705,7 @@ ul{
 .hotcategory>li{
     height: 300px;
     padding:10px 0;
-    border-bottom: 2px solid #efefef;
+    border-bottom: 2px dotted #efefef;
     margin: 50px 0;
 }
 
@@ -633,9 +717,10 @@ ul{
 
 .hotTitle{
     width:100%;
-    height: 100px;
+    
     font-size:30px;
     line-height: 40px;
+    text-align: center;
 }
 
 
@@ -655,15 +740,27 @@ ul{
 }
 
 
-.hotLeft .title{
-    font-size:30px;
+/* .hotLeft .title{
+    font-size:24px;
     line-height: 50px;
     font-weight: 900;
     margin-left: 10px;  
+} */
+
+.hotLeft .link{
+    position: absolute;
+    bottom:30px;
+    right: 30px;
+    color:#888;
+}
+
+.hotLeft .link:hover{
+    color:#d00000;
+    
 }
 
 .hotLeft .name{
-    width:150px;
+    width:110px;
 }
 
 .hotLeft .link{
@@ -706,12 +803,17 @@ ul{
     position: relative;
 }
 
+.besticon img{
+    width:50%;
+}
+
 .besticonIn .nth{
     position: absolute;
-    top:22px;
-    left:25px;
+    top:8px;
+    left:10px;
     color:white;
     font-weight: 900;
+    font-size:12px;
 }
 
 
@@ -723,7 +825,7 @@ ul{
     width:60px;
     height: 70px;
     position: absolute;
-    top:120px;
+    top:100px;
 }
 
 .hotLeft .button .button_next{
@@ -733,7 +835,7 @@ ul{
     width:60px;
     height: 70px;
     position: absolute;
-    top:120px;
+    top:100px;
     left:450px;
 }
 
@@ -751,32 +853,49 @@ ul{
 }
 
 .categorybar{
-    position: absolute;
+    position: sticky;
     top:50px;
-    left:100px;
-    border:2px solid #efefef;
+    left:50%;
+    
+    /* border:2px solid #efefef; */
+    width:80px;
+    height: 0;
 }
 
-.categorybar .title{
+.categorybar ul{
+    margin-left:-680px;
+}
+
+/* .categorybar .title{
     width:80px;
     height: 40px;
     line-height: 40px;
-    background-color: #2a2a2a;
-    color: #efefef;
+    
+    
     text-align: center;
     font-weight: 900;
+    
+} */
+
+.categorybar .title a{
+    background-color: #2a2a2a;
+    color: #efefef;
 }
 
 .categorybar li a{
     display: block;
     width:80px;
-    height: 30px;
-    font-size:10px;
+    height: 40px;
+    font-size:12px;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     color:#666;
     font-weight: 900;
     border-bottom:1px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #efefef; 
+    background-color:white;
+    z-index: 10;
 
 
 }
@@ -828,6 +947,7 @@ ul{
 footer{
     width:100%;
     height: 230px;
+    
 
 }
 
