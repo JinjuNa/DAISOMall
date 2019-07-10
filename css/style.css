@@ -4,8 +4,8 @@ a{
     color:inherit;
 }
 
-ul{
-    
+body{
+    color:#636363;
 }
 
 .wrap{
@@ -156,6 +156,11 @@ ul{
     border-bottom: 3px solid #d00000;   
 }
 
+.allcategorywrap{
+    position: relative;
+    /* 문제가 있나? */
+}
+
 .allcategorybutton{
     position: relative;
     
@@ -202,11 +207,26 @@ ul{
     margin-bottom:5px;
 }
 
+/* total_cate_box */
+
+.total_cate_box{
+    width:100%;
+    position: absolute;
+    top:50px;
+    left:0;
+    background-color: white;
+    z-index: 10;
+    display: none;
+
+}
+
 
 
 .service{
-    display: inline-block;
-    margin-left:20px;
+    position: absolute;
+    top:15px;
+    left:50%;
+    margin-left: -300px;
 }
 
 .service li{
@@ -257,7 +277,7 @@ ul{
 
 }
 
-.mainVisual .button .button_prev{
+.mainVisual .button .button_prev a{
     display: block;
     background-position: -510px 0;
     background-image: url(../img/main.png);
@@ -267,7 +287,7 @@ ul{
     top:125px;
 }
 
-.mainVisual .button .button_next{
+.mainVisual .button .button_next a{
     display: block;
     background-position: -580px 0;
     background-image: url(../img/main.png);
@@ -279,12 +299,12 @@ ul{
 }
 
 .mainVisual img{
-    display: inline-block;
-    width:100%;
+    /* display: inline-block; */
+    /* width:100%; */
     vertical-align: top;
     
 }
-.bannerbutton ul::after{
+.bannerbuttonwrap:after{
     display: block;
     clear: both;
     content:'';
@@ -326,6 +346,8 @@ ul{
     left:50%;
     bottom:40px;
     margin-left:-30px;  
+    /* 일단 pager 숨기기 */
+    display: none;
 
 }
 
@@ -342,6 +364,10 @@ ul{
     position: relative;
 }
 
+.bestitems{
+    position:relative;
+}
+
 .bestTitle{
     display: block;
     height: 50px;
@@ -354,8 +380,8 @@ ul{
 .itemslider{
     padding:0 70px;
     height: 300px;
-    width:fit-content;
-    position: relative;
+    width:740px;
+    /* position: relative; */
 }
 
 .itemslider:after{
@@ -369,7 +395,7 @@ ul{
     height: 180px;
 }
 
-.itemslider li{
+.itemslider>li{
     position: relative;
     float: left;
     margin-right:20px;
@@ -423,7 +449,7 @@ ul{
     width:60px;
     height: 70px;
     position: absolute;
-    top:70px;
+    top:150px;
     left:0;
 }
 
@@ -434,19 +460,24 @@ ul{
     width:60px;
     height: 70px;
     position: absolute;
-    top:70px;
-    right:0;
+    top:150px;
+    right:320px;
 }
 
-.best .pager{
+.best .slick-dots{
     position: absolute;
-    left:50%;
+    left:370px;
     bottom:10px;
     margin-left:-17px;  
 
 }
 
-.pager a{
+.slick-dots li{
+    float: left;
+    margin-left:10px;
+}
+
+.slick-dots a{
     display: inline-block;
     width:8px;
     height: 8px;
@@ -455,9 +486,11 @@ ul{
     text-indent: -9999px;
 }
 
-.pager .active{
+
+.slick-dots li.slick-active a{
     background-color:#2a2a2a;
 }
+
 .smallAD {
     position: absolute;
     top:0px;
@@ -491,7 +524,7 @@ ul{
 
 .wingbanner{
     position: absolute;
-    top:100px;
+    top:300px;
     right:50%;
     margin-right: -700px;
     height: 0;
@@ -517,15 +550,27 @@ ul{
     
 }
 
+.wingbanner .wingmenu a:hover{
+    background-color:#6f6f6f;
+    color:#eee;
+    
+}
+
 
 .myshopping{
     background-color: #2a2a2a;
     
 }
 
+.wingbanner .img img{
+    height: 100%;
+}
+
 .wingbanner ul li .img li a{
-    height: 100px;
-    line-height: 100px;
+    margin:10px 0;
+    height: 80px;
+    
+    width:100%;
 }
 
 
@@ -536,6 +581,7 @@ ul{
 .hot{
     padding-top:200px;
     position: relative;
+    margin-bottom:300px;
 }
 
 #category1{
@@ -779,13 +825,13 @@ ul{
     content:'';
 }
 
-.hotLeft ul>li{
+.hotLeft>ul>li{
     float:left;
     width:25%;
     position: relative;
     margin-right:40px;
 }
-.hotLeft ul>li:last-child{
+.hotLeft>ul>li:nth-last-child(3n+2){
     margin-right: 0;
 }
 
@@ -840,6 +886,11 @@ ul{
 }
 
 
+.hot .slick-dots{
+    margin-left:70px;
+
+}
+
 
 
 .hotRight{
@@ -853,7 +904,7 @@ ul{
 }
 
 .categorybar{
-    position: sticky;
+    position: absolute;
     top:50px;
     left:50%;
     
