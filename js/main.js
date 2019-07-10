@@ -21,7 +21,7 @@ window.onload = function(){
 
 // headerTop 광고 닫기 기능
 $('#close').on('click', function(){
-	$('.headerTop').hide();
+	$('.headerTop').slideUp();
 });
 
 //전체카테고리 버튼 보이기/숨기기
@@ -175,6 +175,11 @@ $(".regular").slick({
 		});
 		$('.categorybar .title a').css({'backgroundColor': '#2a2a2a','color':'#efefef'});
 
+		var move  = $('.hotcategory>li').eq(i-1).offset().top;
+		//카테고리바 위에 여백
+		$('html, body').animate({
+			'scrollTop' : move-250
+		})
 
 	});
 
